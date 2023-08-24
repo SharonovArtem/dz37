@@ -1,0 +1,36 @@
+using System;
+
+namespace dzkurs
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Player player = new Player("Егор", 100, 50, 15);
+
+            player.ShowInfo();
+        }
+
+        class Player
+        {
+            public string Name;
+            public int Health;
+            public int Mana;
+            public int Damage;
+
+            public Player(string name, int health, int mana, int damage)
+            {
+                Name = name;
+                Health = health;
+                Mana = mana;
+                Damage = damage;
+            }
+
+            public void ShowInfo()
+            {                
+                Console.WriteLine($"Имя бойца: {Name} \nЗдоровье бойца: {Health} \nМана бойца: {Mana} \nУрон бойца: {Damage}");
+            }
+        }
+
+    }
+}
