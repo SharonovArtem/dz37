@@ -13,11 +13,6 @@ namespace dzkurs
 
         class Player
         {
-            public string Name { get; private set; }
-            public int Health { get; private set; }
-            public int Mana { get; private set; }
-            public int Damage { get; private set; }
-
             public Player(string name, int health, int mana, int damage)
             {
                 Name = name;
@@ -25,6 +20,11 @@ namespace dzkurs
                 Mana = mana;
                 Damage = damage;
             }
+
+            public string Name { get; private set; }
+            public int Health { get; private set; }
+            public int Mana { get; private set; }
+            public int Damage { get; private set; }
 
             public void ShowInfo()
             {
