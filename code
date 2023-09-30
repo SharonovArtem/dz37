@@ -15,20 +15,20 @@ namespace dzkurs
         {
             public Player(string name, int health, int mana, int damage)
             {
-                Name = name;
-                Health = health;
-                Mana = mana;
-                Damage = damage;
+                _name = name;
+                _health = health;
+                _mana = mana;
+                _damage = damage;
             }
 
-            private string Name;
-            private int Health;
-            private int Mana;
-            private int Damage;
+            private string _name;
+            private int _health;
+            private int _mana;
+            private int _damage;
 
             public void ShowInfo()
             {
-                Console.WriteLine($"Имя бойца: {Name} \nЗдоровье бойца: {Health} \nМана бойца: {Mana} \nУрон бойца: {Damage}");
+                Console.WriteLine($"Имя бойца: {_name} \nЗдоровье бойца: {_health} \nМана бойца: {_mana} \nУрон бойца: {_damage}");
             }
         }
     }
