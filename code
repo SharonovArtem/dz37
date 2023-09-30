@@ -9,9 +9,10 @@ namespace dzkurs
             Player player = new Player("Егор", 100, 50, 15);
 
             player.ShowInfo();
-        }
+        } 
+    }
 
-        class Player
+    class Player
         {
             public Player(string name, int health, int mana, int damage)
             {
@@ -31,5 +32,4 @@ namespace dzkurs
                 Console.WriteLine($"Имя бойца: {_name} \nЗдоровье бойца: {_health} \nМана бойца: {_mana} \nУрон бойца: {_damage}");
             }
         }
-    }
 }
